@@ -1,0 +1,46 @@
+print "Hello, world!"
+for i = 1 to 10
+print i,
+next
+
+print "2+2 = "; 2+2
+print "10/2 = "; 10/2
+print "3*6 = "; 3*6
+print "2^2*5 - 100/5 + (-8) - (-8) Must be zero -> "; 2^2*5 - 100/5 + (-8) - (-8)
+
+gosub 10
+gosub 15
+
+print
+input "Enter number: ", a
+if a > 0 then print a; " is greater than zero"
+if a = 0 then print a; " is zero"
+if a < 0 then print a; " is less than zero"
+
+print
+print "Program terminating"
+print "(c) by sev 07 oct 93 19:03"
+end
+
+10 
+print "First subroutine"
+for j = 1 to 3
+gosub 2
+next
+return
+
+2 
+print j
+print "Second subroutine"
+return
+
+15 
+print "And now there are 50 stars !!!!!!!!!!!!!!!!!!!!!!v"
+for i = 1 to 50
+gosub 100
+next
+return
+
+100
+print "*";
+return
